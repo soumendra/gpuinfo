@@ -18,3 +18,22 @@ print("\nGetting current GPU stats:")
 current_stats = gpu_info.get_gpu_stats()
 for stat in current_stats:
     print(f"GPU {stat.index} - Utilization: {stat.gpu_utilization}%, Memory Used: {stat.used_memory:.2f} GB")
+
+
+from gpuinfo import GPUInfo, DEFAULT_EXEMPT_PROCESSES
+
+gpu_info = GPUInfo()
+
+# Use default exempt processes
+gpu_info.free_up_gpu(0)
+
+# Provide a custom list of exempt processes
+custom_exempt = ["/usr/bin/custom-process", "another-process"]
+gpu_info.free_up_gpu(0, exempt_processes=custom_exempt)
+
+# Use an empty list to terminate all processes
+gpu_info.free_up_gpu(0, exempt_processes=[])
+
+# Add more processes to the default list
+extended_exempt = DEFAULT_EXEMPT_PROCESSES + ["additional-process"]
+gpu_info.free_up_gpu(0, exempt_processes=extended_exempt)
