@@ -20,7 +20,7 @@
     
     
       
-        <title>Usage Guide - GPUInfo Documentation</title>
+        <title>Usage Guide - GPUInfoNV Documentation</title>
       
     
     
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="GPUInfo Documentation" class="md-header__button md-logo" aria-label="GPUInfo Documentation" data-md-component="logo">
+    <a href=".." title="GPUInfoNV Documentation" class="md-header__button md-logo" aria-label="GPUInfoNV Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            GPUInfo Documentation
+            GPUInfoNV Documentation
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -173,13 +173,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="GPUInfo Documentation" class="md-nav__button md-logo" aria-label="GPUInfo Documentation" data-md-component="logo">
+    <a href=".." title="GPUInfoNV Documentation" class="md-nav__button md-logo" aria-label="GPUInfoNV Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    GPUInfo Documentation
+    GPUInfoNV Documentation
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -267,9 +267,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#initializing-gpuinfo" class="md-nav__link">
+  <a href="#initializing-gpuinfonv" class="md-nav__link">
     <span class="md-ellipsis">
-      Initializing GPUInfo
+      Initializing GPUInfonv
     </span>
   </a>
   
@@ -396,9 +396,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#initializing-gpuinfo" class="md-nav__link">
+  <a href="#initializing-gpuinfonv" class="md-nav__link">
     <span class="md-ellipsis">
-      Initializing GPUInfo
+      Initializing GPUInfonv
     </span>
   </a>
   
@@ -476,10 +476,10 @@
 
 
 <h1 id="usage-guide">Usage Guide</h1>
-<p>This guide provides examples of how to use the GPUInfo library effectively.</p>
+<p>This guide provides examples of how to use the GPUInfoNV library effectively.</p>
 <h2 id="basic-usage">Basic Usage</h2>
-<h3 id="initializing-gpuinfo">Initializing GPUInfo</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">gpuinfo</span> <span class="kn">import</span> <span class="n">GPUInfo</span>
+<h3 id="initializing-gpuinfonv">Initializing GPUInfonv</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">gpuinfonv</span> <span class="kn">import</span> <span class="n">GPUInfo</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Create a GPUInfo instance</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">gpu_info</span> <span class="o">=</span> <span class="n">GPUInfo</span><span class="p">()</span>
@@ -501,7 +501,7 @@
 <h2 id="advanced-usage">Advanced Usage</h2>
 <h3 id="customizing-exempt-processes">Customizing Exempt Processes</h3>
 <p>You can customize the list of processes that are exempt from termination:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">gpuinfo</span> <span class="kn">import</span> <span class="n">GPUInfo</span><span class="p">,</span> <span class="n">DEFAULT_EXEMPT_PROCESSES</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">gpuinfonv</span> <span class="kn">import</span> <span class="n">GPUInfo</span><span class="p">,</span> <span class="n">DEFAULT_EXEMPT_PROCESSES</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">gpu_info</span> <span class="o">=</span> <span class="n">GPUInfo</span><span class="p">()</span>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
