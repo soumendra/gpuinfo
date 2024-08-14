@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "gpuinfo"
+version = "0.1.0"
+description = "basic gpu relaed utiliies for debugging"
+authors = ["Soumendra Dhanee <soumendra@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.8.2"
+pynvml = "^11.5.3"
+psutil = "^6.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+ruff = "^0.5.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
