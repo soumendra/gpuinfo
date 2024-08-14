@@ -30,7 +30,7 @@ gpu_info = GPUInfo()
 # Print information about all detected GPUs
 gpu_info.print_gpu_info()
 
-# Free up GPU resources
+# Free up GPU resources (be careful)
 gpu_info.free_up_gpu(0)  # Free up GPU 0
 ```
 
