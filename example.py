@@ -5,7 +5,7 @@ It creates a GPUInfo object, prints detailed information about all detected GPUs
 and then retrieves and displays current GPU statistics.
 """
 
-from gpuinfo import GPUInfo
+from gpuinfonv import GPUInfo
 
 # Create a GPUInfo object
 gpu_info = GPUInfo()
@@ -20,7 +20,7 @@ for stat in current_stats:
     print(f"GPU {stat.index} - Utilization: {stat.gpu_utilization}%, Memory Used: {stat.used_memory:.2f} GB")
 
 
-from gpuinfo import GPUInfo, DEFAULT_EXEMPT_PROCESSES
+from gpuinfonv import GPUInfo, DEFAULT_EXEMPT_PROCESSES
 
 gpu_info = GPUInfo()
 

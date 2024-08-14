@@ -1,13 +1,13 @@
 # Usage Guide
 
-This guide provides examples of how to use the GPUInfo library effectively.
+This guide provides examples of how to use the GPUInfoNV library effectively.
 
 ## Basic Usage
 
-### Initializing GPUInfo
+### Initializing GPUInfonv
 
 ```python
-from gpuinfo import GPUInfo
+from gpuinfonv import GPUInfo
 
 # Create a GPUInfo instance
 gpu_info = GPUInfo()
@@ -40,7 +40,7 @@ gpu_info.free_up_gpu(2, terminate_processes=True, clear_cache=False)
 You can customize the list of processes that are exempt from termination:
 
 ```python
-from gpuinfo import GPUInfo, DEFAULT_EXEMPT_PROCESSES
+from gpuinfonv import GPUInfo, DEFAULT_EXEMPT_PROCESSES
 
 gpu_info = GPUInfo()
 

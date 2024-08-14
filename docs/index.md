@@ -1,6 +1,6 @@
-# Welcome to GPUInfo
+# Welcome to GPUInfoNV
 
-GPUInfo is a Python library for gathering and managing information about NVIDIA GPUs. It provides functionality to retrieve GPU statistics, check PyTorch availability, and free up GPU resources.
+GPUInfoNV is a Python library for gathering and managing information about NVIDIA GPUs. It provides functionality to retrieve GPU statistics, check PyTorch availability, and free up GPU resources.
 
 ## Features
 
@@ -11,18 +11,18 @@ GPUInfo is a Python library for gathering and managing information about NVIDIA 
 
 ## Installation
 
-You can install GPUInfo using pip:
+You can install GPUInfoNV using pip:
 
 ```bash
-pip install gpuinfo
+pip install gpuinfonv
 ```
 
 ## Quick Start
 
-Here's a simple example of how to use GPUInfo:
+Here's a simple example of how to use GPUInfoNV:
 
 ```python
-from gpuinfo import GPUInfo
+from gpuinfonv import GPUInfo
 
 # Create a GPUInfo instance
 gpu_info = GPUInfo()

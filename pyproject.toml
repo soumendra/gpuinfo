@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "gpuinfo"
+name = "gpuinfonv"
 version = "0.1.0"
 description = "A Python library for gathering and managing information about NVIDIA GPUs"
 authors = ["Soumendra Dhanee <soumendra@gmail.com>"]
